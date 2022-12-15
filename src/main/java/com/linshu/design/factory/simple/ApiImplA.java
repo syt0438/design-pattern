@@ -7,7 +7,7 @@ package com.linshu.design.factory.simple;
  * Date: 2022/12/15
  * Time: 18:03
  */
-public class ApiImplA implements Api {
+class ApiImplA implements Api {
     @Override
     public void operation(String msg) {
         System.out.println("A: " + msg);
