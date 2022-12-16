@@ -1,7 +1,9 @@
 package com.linshu.design.factory.simple;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * @author LinShu
@@ -12,10 +14,20 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class ApiFactory {
 
+    private static final ConcurrentMap<Class<?>, Object> CACHE = new ConcurrentHashMap<>();
+
     public static Api create() {
         boolean b = new Random().nextInt() % 2 == 0;
 
-        return b ? new ApiImplA() : new ApiImplB();
+        Class<?> clazz = b ? ApiImplA.class : ApiImplB.class;
+
+        return (Api) CACHE.computeIfAbsent(clazz, c -> {
+            try {
+                return c.newInstance();
+            } catch (InstantiationException | IllegalAccessException e) {
+                return null;
+            }
+        });
     }
 
 }

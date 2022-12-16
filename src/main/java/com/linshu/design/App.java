@@ -13,9 +13,17 @@ import com.linshu.design.factory.simple.ApiFactory;
 public class App {
 
     public static void main(String[] args) {
-        Api api = ApiFactory.create();
+        Api api1 = ApiFactory.create();
+        Api api2 = ApiFactory.create();
+        Api api3 = ApiFactory.create();
 
-        api.operation("1");
+        api1.operation("1");
+        api2.operation("2");
+        api3.operation("3");
+
+        System.out.println(api1);
+        System.out.println(api2);
+        System.out.println(api3);
     }
 
 }
