@@ -1,7 +1,8 @@
 package com.linshu.design;
 
-import com.linshu.design.factory.method.ExportDbOperate;
-import com.linshu.design.factory.method.ExportOperate;
+import com.linshu.design.factory.abstraction.AbstractFactory;
+import com.linshu.design.factory.abstraction.ComputerEngineer;
+import com.linshu.design.factory.abstraction.Schema1;
 
 /**
  * @author LinShu
@@ -13,9 +14,9 @@ import com.linshu.design.factory.method.ExportOperate;
 public class App {
 
     public static void main(String[] args) {
-        ExportOperate exporter = new ExportDbOperate();
-
-        exporter.export("test");
+        ComputerEngineer engineer = new ComputerEngineer();
+        AbstractFactory schema = new Schema1();
+        engineer.makeComputer(schema);
     }
 
 }
