@@ -7,7 +7,7 @@ package com.linshu.design.factory.abstraction;
  * Date: 2022/12/20
  * Time: 17:40
  */
-public class Schema1 implements AbstractFactory{
+class Schema1 implements AbstractFactory{
     @Override
     public CPUApi createCPUApi() {
         return new IntelCPU();

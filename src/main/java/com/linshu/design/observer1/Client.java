@@ -1,7 +1,7 @@
 package com.linshu.design.observer1;
 
 class Client {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         // 创建一个报纸，作为被观察者
         NewsPaper subject = new NewsPaper();
         // 创建阅读者，也就是观察者

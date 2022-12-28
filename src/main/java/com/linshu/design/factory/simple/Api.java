@@ -7,7 +7,7 @@ package com.linshu.design.factory.simple;
  * Date: 2022/12/15
  * Time: 18:03
  */
-public interface Api {
+interface Api {
 
     void operation(String msg);
 

@@ -7,7 +7,7 @@ package com.linshu.design.factory.abstraction;
  * Date: 2022/12/20
  * Time: 17:36
  */
-public interface CPUApi {
+interface CPUApi {
 
     void calculate();
 

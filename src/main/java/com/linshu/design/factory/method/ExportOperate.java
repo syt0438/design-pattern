@@ -7,11 +7,11 @@ package com.linshu.design.factory.method;
  * Date: 2022/12/20
  * Time: 12:03
  */
-public abstract class ExportOperate {
+abstract class ExportOperate {
 
     protected abstract ExportApi getExporter();
 
-    public boolean export(String data) {
+    boolean export(String data) {
         ExportApi api = getExporter();
 
         return api.export(data);

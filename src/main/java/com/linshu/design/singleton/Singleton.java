@@ -9,7 +9,7 @@ import java.util.Date;
  * Date: 2022/12/19
  * Time: 18:47
  */
-public class Singleton {
+class Singleton {
     private static class SingletonHolder {
         /**
          * 静态初始化器，由JVM来保证线程安全
@@ -28,7 +28,7 @@ public class Singleton {
     private Singleton() {
     }
 
-    public static Singleton getInstance() {
+    static Singleton getInstance() {
         return SingletonHolder.instance;
     }
 }

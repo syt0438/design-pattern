@@ -1,6 +1,6 @@
 package com.linshu.design.prototype;
 
-public class PersonalOrder implements OrderApi {
+class PersonalOrder implements OrderApi {
     /**
      * 订购人员姓名
      */
@@ -22,19 +22,19 @@ public class PersonalOrder implements OrderApi {
         this.orderProductNum = num;
     }
 
-    public String getCustomerName() {
+    String getCustomerName() {
         return customerName;
     }
 
-    public void setCustomerName(String customerName) {
+    void setCustomerName(String customerName) {
         this.customerName = customerName;
     }
 
-    public String getProductId() {
+    String getProductId() {
         return productId;
     }
 
-    public void setProductId(String productId) {
+    void setProductId(String productId) {
         this.productId = productId;
     }
 

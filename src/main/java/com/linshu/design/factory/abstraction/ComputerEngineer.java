@@ -7,7 +7,7 @@ package com.linshu.design.factory.abstraction;
  * Date: 2022/12/20
  * Time: 17:42
  */
-public class ComputerEngineer {
+class ComputerEngineer {
     /**
      * 定义组装电脑需要的CPU
      */
@@ -22,7 +22,7 @@ public class ComputerEngineer {
      *
      * @param schema 客户选择的装机方案
      */
-    public void makeComputer(AbstractFactory schema) {
+    void makeComputer(AbstractFactory schema) {
         //1：首先准备好装机所需要的配件
         prepareHardwares(schema);
         //2：组装电脑

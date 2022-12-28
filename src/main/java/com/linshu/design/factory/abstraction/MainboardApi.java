@@ -7,7 +7,7 @@ package com.linshu.design.factory.abstraction;
  * Date: 2022/12/20
  * Time: 17:37
  */
-public interface MainboardApi {
+interface MainboardApi {
 
     void installCPU();
 

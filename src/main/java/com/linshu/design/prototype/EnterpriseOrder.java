@@ -1,6 +1,6 @@
 package com.linshu.design.prototype;
 
-public class EnterpriseOrder implements OrderApi {
+class EnterpriseOrder implements OrderApi {
     /**
      * 企业名称
      */
@@ -22,19 +22,19 @@ public class EnterpriseOrder implements OrderApi {
         this.orderProductNum = num;
     }
 
-    public String getEnterpriseName() {
+    String getEnterpriseName() {
         return enterpriseName;
     }
 
-    public void setEnterpriseName(String enterpriseName) {
+    void setEnterpriseName(String enterpriseName) {
         this.enterpriseName = enterpriseName;
     }
 
-    public String getProductId() {
+    String getProductId() {
         return productId;
     }
 
-    public void setProductId(String productId) {
+    void setProductId(String productId) {
         this.productId = productId;
     }
 

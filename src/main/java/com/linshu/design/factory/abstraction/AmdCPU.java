@@ -7,7 +7,7 @@ package com.linshu.design.factory.abstraction;
  * Date: 2022/12/20
  * Time: 17:37
  */
-public class AmdCPU implements CPUApi {
+class AmdCPU implements CPUApi {
     @Override
     public void calculate() {
         System.out.println("now in AMD CPU, pins=1164");

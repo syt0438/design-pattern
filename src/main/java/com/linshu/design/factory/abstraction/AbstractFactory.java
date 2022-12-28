@@ -7,7 +7,7 @@ package com.linshu.design.factory.abstraction;
  * Date: 2022/12/20
  * Time: 17:35
  */
-public interface AbstractFactory {
+interface AbstractFactory {
 
     CPUApi createCPUApi();
 

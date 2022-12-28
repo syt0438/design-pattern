@@ -1,12 +1,12 @@
 package com.linshu.design.mediator;
 
-public class SoundCard extends Colleague {
+class SoundCard extends Colleague {
 
-    public SoundCard(Mediator mediator) {
+    SoundCard(Mediator mediator) {
         super(mediator);
     }
 
-    public void soundData(String data) {
+    void soundData(String data) {
         System.out.println("listen: " + data);
     }
 }

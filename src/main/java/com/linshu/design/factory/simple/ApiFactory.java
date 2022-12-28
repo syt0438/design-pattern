@@ -1,6 +1,5 @@
 package com.linshu.design.factory.simple;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -12,11 +11,11 @@ import java.util.concurrent.ConcurrentMap;
  * Date: 2022/12/15
  * Time: 18:06
  */
-public class ApiFactory {
+class ApiFactory {
 
     private static final ConcurrentMap<Class<?>, Object> CACHE = new ConcurrentHashMap<>();
 
-    public static Api create() {
+    static Api create() {
         boolean b = new Random().nextInt() % 2 == 0;
 
         Class<?> clazz = b ? ApiImplA.class : ApiImplB.class;

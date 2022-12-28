@@ -1,6 +1,6 @@
 package com.linshu.design.observer;
 
-public class ConcreteObserver implements Observer {
+class ConcreteObserver implements Observer {
 
     private String state;
 

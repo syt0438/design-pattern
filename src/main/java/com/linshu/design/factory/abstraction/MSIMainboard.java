@@ -7,7 +7,7 @@ package com.linshu.design.factory.abstraction;
  * Date: 2022/12/20
  * Time: 17:39
  */
-public class MSIMainboard implements MainboardApi {
+class MSIMainboard implements MainboardApi {
     @Override
     public void installCPU() {
         System.out.println("now in MSIMainboard, cpuHoles=1164");

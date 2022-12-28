@@ -14,9 +14,9 @@ abstract class Subject {
         readers.remove(reader);
     }
 
-    protected void notifyObservers() {
+    protected void notifyObservers(String data) {
         for (Observer reader : readers) {
-            reader.update(this);
+            reader.update(data);
         }
     }
 }

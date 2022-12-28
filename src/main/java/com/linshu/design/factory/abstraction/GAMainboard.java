@@ -7,7 +7,7 @@ package com.linshu.design.factory.abstraction;
  * Date: 2022/12/20
  * Time: 17:38
  */
-public class GAMainboard implements MainboardApi {
+class GAMainboard implements MainboardApi {
     @Override
     public void installCPU() {
         System.out.println("now in GAMainboard,cpuHoles=1156");

@@ -7,7 +7,7 @@ package com.linshu.design.factory.method;
  * Date: 2022/12/20
  * Time: 12:04
  */
-public class ExportTxtOperate extends ExportOperate {
+class ExportTxtOperate extends ExportOperate {
     @Override
     protected ExportApi getExporter() {
         return new ExportTxt();

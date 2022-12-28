@@ -1,14 +1,14 @@
 package com.linshu.design.mediator;
 
-public abstract class Colleague {
+abstract class Colleague {
 
     private Mediator mediator;
 
-    public Colleague(Mediator mediator) {
+    Colleague(Mediator mediator) {
         this.mediator = mediator;
     }
 
-    public Mediator getMediator() {
+    Mediator getMediator() {
         return mediator;
     }
 

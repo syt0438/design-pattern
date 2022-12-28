@@ -1,12 +1,12 @@
 package com.linshu.design.prototype;
 
-public class OrderBusiness {
+class OrderBusiness {
     /**
      * 创建订单的方法
      * 
      * @param order 订单的接口对象
      */
-    public void saveOrder(OrderApi order) {
+    void saveOrder(OrderApi order) {
         // 根据业务要求，当订单预定产品数量超过1000时，就要把订单拆成两份订单
 
         // 1：判断当前的预定产品数量是否大于1000

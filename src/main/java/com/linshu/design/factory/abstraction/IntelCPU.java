@@ -7,7 +7,7 @@ package com.linshu.design.factory.abstraction;
  * Date: 2022/12/20
  * Time: 17:37
  */
-public class IntelCPU implements CPUApi {
+class IntelCPU implements CPUApi {
     @Override
     public void calculate() {
         System.out.println("now in Intel CPU, pins=1156");

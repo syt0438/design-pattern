@@ -1,6 +1,6 @@
 package com.linshu.design.mediator;
 
-public class MotherBoard implements Mediator {
+class MotherBoard implements Mediator {
 
     private CDDriver cdDriver = null;
 
@@ -36,25 +36,25 @@ public class MotherBoard implements Mediator {
         this.cpu.executeData(data);
     }
 
-    public MotherBoard setCdDriver(CDDriver cdDriver) {
+    MotherBoard setCdDriver(CDDriver cdDriver) {
         this.cdDriver = cdDriver;
 
         return this;
     }
 
-    public MotherBoard setCpu(CPU cpu) {
+    MotherBoard setCpu(CPU cpu) {
         this.cpu = cpu;
 
         return this;
     }
 
-    public MotherBoard setVideoCard(VideoCard videoCard) {
+    MotherBoard setVideoCard(VideoCard videoCard) {
         this.videoCard = videoCard;
 
         return this;
     }
 
-    public MotherBoard setSoundCard(SoundCard soundCard) {
+    MotherBoard setSoundCard(SoundCard soundCard) {
         this.soundCard = soundCard;
 
         return this;

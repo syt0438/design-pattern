@@ -12,8 +12,8 @@ class Reader implements Observer {
     private String name;
 
     @Override
-    public void update(Subject subject) {
-        System.out.println("[" + name + "] reading: " + ((NewsPaper) subject).getContent());
+    public void update(String data) {
+        System.out.println("[" + name + "] reading: " + data);
     }
 
 }

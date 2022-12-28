@@ -7,9 +7,9 @@ package com.linshu.design.factory.abstraction;
  * Date: 2022/12/15
  * Time: 18:01
  */
-public class Client {
+class Client {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         ComputerEngineer engineer = new ComputerEngineer();
         AbstractFactory schema = new Schema1();
         engineer.makeComputer(schema);

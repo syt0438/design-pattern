@@ -1,16 +1,16 @@
 package com.linshu.design.mediator;
 
-public class CPU extends Colleague {
+class CPU extends Colleague {
 
     private String videoData = "";
 
     private String soundData = "";
 
-    public CPU(Mediator mediator) {
+    CPU(Mediator mediator) {
         super(mediator);
     }
 
-    public void executeData(String data) {
+    void executeData(String data) {
         String[] split = data.split(",");
 
         soundData = split[0];
@@ -19,11 +19,11 @@ public class CPU extends Colleague {
         this.getMediator().changed(this);
     }
 
-    public String getVideoData() {
+    String getVideoData() {
         return videoData;
     }
 
-    public String getSoundData() {
+    String getSoundData() {
         return soundData;
     }
 
