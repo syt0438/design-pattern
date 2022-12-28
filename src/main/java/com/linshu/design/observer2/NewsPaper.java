@@ -12,7 +12,7 @@ import java.util.Observable;
  * Time: 16:59
  */
 @Getter
-class NewPaper extends Observable {
+class NewsPaper extends Observable {
 
     private String data;
 

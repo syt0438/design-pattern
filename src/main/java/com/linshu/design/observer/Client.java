@@ -1,7 +1,7 @@
 package com.linshu.design.observer;
 
 class Client {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         ConcreteSubject subject = new ConcreteSubject();
         ConcreteObserver observer = new ConcreteObserver();
 

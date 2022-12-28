@@ -9,7 +9,7 @@ package com.linshu.design.factory.abstraction;
  */
 class Client {
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         ComputerEngineer engineer = new ComputerEngineer();
         AbstractFactory schema = new Schema1();
         engineer.makeComputer(schema);

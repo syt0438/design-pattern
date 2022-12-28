@@ -1,7 +1,7 @@
 package com.linshu.design.mediator;
 
 class Client {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         // 1：创建中介者——主板对象
         MotherBoard mediator = new MotherBoard();
         // 2：创建同事类

@@ -5,7 +5,7 @@ package com.linshu.design.prototype;
  */
 class Client {
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         // 创建订单对象，这里为了演示简单，直接new了
         PersonalOrder op = new PersonalOrder();
         // 设置订单数据
