@@ -2,7 +2,7 @@ package com.linshu.design.strategy.my;
 
 class Client {
     public static void main(String[] args) {
-        CalPrice way = CalPriceWay.NORMAL;
+        CalPrice way = CalPriceWay.OLD;
 
         double quote = way.calculatePrice(1000);
 

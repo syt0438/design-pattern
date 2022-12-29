@@ -27,7 +27,13 @@ public enum CalPriceWay implements CalPrice {
 
     @Override
     public double calculatePrice(double goodsPrice) {
-        return fn.apply(goodsPrice);
+        System.out.println("调用开始时间: " + System.currentTimeMillis());
+
+        double v = fn.apply(goodsPrice);
+
+        System.out.println("调用结束时间: " + System.currentTimeMillis());
+
+        return v;
     }
 
 }
